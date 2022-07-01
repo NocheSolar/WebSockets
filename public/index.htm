@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Chat</h1>
+    
+    <div id="msgsPool"></div>
+
+    <form id="msgsForm">
+        <input id="usernameInput" type="text" placeholder="Nombre de usuario">
+        <input id="messageInput" type="text" placeholder="Mensaje">
+        <input type="submit" value="Enviar">
+    </form>
+
+
+    <h2>Productos</h2>
+
+    <form class="productsForm">
+        <input type="text" name="name" id="nameInput">
+        <input type="text" name="price" id="priceInput">
+        <input type="text" name="img" id="imgInput">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./cliente.socket.js"></script>
+</body>
+</html>
